@@ -1,4 +1,5 @@
 {
+  "homepage": "https://afung206.github.io/flipclock/",
   "name": "flipclock",
   "version": "0.1.0",
   "private": true,
@@ -11,7 +12,9 @@
     "build": "react-scripts build",
     "lint": "eslint --fix ./src/*/*.tsx --color",
     "test": "env TS_NODE_PROJECT='tsconfig.test.json' mocha --require ts-node/register --verbose --config './test/.mocharc.js' --recursive './test/**/*/*.test.tsx' --exit",
-    "tint": "npm-run-all lint test"
+    "tint": "npm-run-all lint test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -48,6 +51,7 @@
     "eslint": "^7.17.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-react": "^7.22.0",
+    "gh-pages": "^3.1.0",
     "mocha": "^8.2.1",
     "node-sass": "^5.0.0",
     "npm-run-all": "^4.1.5",
