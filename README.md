@@ -1,1 +1,1 @@
-# flipclock
+# FlipClock in React

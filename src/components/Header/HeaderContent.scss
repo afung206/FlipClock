@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+header {
+	display: flex;
+	position: relative;
+
+	h1 {
+		font-family: 'Droid Sans Mono';
+		font-weight: lighter;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: purple;
+	}
+}

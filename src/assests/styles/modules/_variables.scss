@@ -1,0 +1,33 @@
+$easeInOut: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+// Variables
+// Common default variables to use across other SASS files as well as some mixins
+
+$border: whitesmoke;
+$card: white;
+$font-family: 'Droid Sans Mono', monospace;
+$font-size: 5em;
+$font-width: lighter;
+$font-color: lighten(black, 20%);
+
+// Animation mixin
+@mixin animate($name, $easing, $duration: 300ms, $delay: 0s, $iteration: 1, $direction: normal, $fill-mode: forwards) {
+	animation: $name $duration $easing $delay $iteration $direction $fill-mode;
+}
+
+@keyframes fold {
+    0% { 
+        transform: rotateX(0deg); 
+    }
+    100% { 
+        transform: rotateX(-180deg); 
+    }
+}
+    
+@keyframes unfold {
+    0% { 
+        transform: rotateX(180deg); 
+    }
+    100% { 
+        transform: rotateX(0deg); 
+    }
+}
