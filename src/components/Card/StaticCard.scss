@@ -1,11 +1,40 @@
 @import '../../assests/styles/modules/variables';
 
-.StaticFlipCard fold {
-	@include animate(fold, $easeInOut, 0.6s);
-	transform-style: preserve-3d;
+.upperCard, .lowerCard {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+	border: 1px solid $border;
+}
+	
+	span {
+		font-size: $font-size;
+		font-family: $font-family;
+		font-weight: $font-width;
+		color: $font-color;
+	}
+
+.upperCard {
+	align-items: flex-end;
+	border-bottom: 0.5px solid $border;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	
+	span {
+		transform: translateY(50%);
+	}
 }
 
-.StaticFlipCard unfold {
-	@include animate(unfold, $easeInOut, 0.6s);
-	transform-style: preserve-3d;
+.lowerCard {
+	align-items: flex-start;
+	border-top: 0.5px solid $border;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+
+	span {
+		transform: translateY(-50%);
+	}
 }
