@@ -18,17 +18,16 @@ export const FlipClock: FunctionComponent = () => {
 
     useEffect(() => {
         timerID = setInterval(() => {
+          console.log("FlipClock::Updating time...");
           return updateTime();
-        }, 100);
+        }, 50);
         return () => {
             clearInterval(timerID);
         }
-    }, []);
+    }, [hours, minutes, seconds]);
   
     const updateTime = () => {
-      // get new date
       const time = new Date();
-      // set time units
       const currentMinutes = time.getMinutes();
       const currentSeconds = time.getSeconds();
       let currentHours = time.getHours() % 12;

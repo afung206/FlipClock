@@ -4,7 +4,6 @@ import { FunctionComponent } from 'react';
 
 export interface StaticCardItemProps {
     position: string;
-    midday?: string;
     digit: String;
 }
 

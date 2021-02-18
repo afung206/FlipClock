@@ -17,7 +17,7 @@ export const FlipUnitContainer: FunctionComponent<FlipUpContainerProps> = (props
 
     // to prevent a negative value
     if (props.unit !== "hours") {
-      previousDigit = previousDigit === '-1' ? '59' : previousDigit;
+      previousDigit = previousDigit === '-1' ? '0' : previousDigit;
     } else {
       previousDigit = previousDigit === '-1' ? '12' : previousDigit;
     }
@@ -35,14 +35,14 @@ export const FlipUnitContainer: FunctionComponent<FlipUpContainerProps> = (props
     const digit2 = !props.shuffle ? previousDigit : currentDigit;
   
     // shuffle animations
-    const animation1 = !props.shuffle ? "fold" : "unfold";
-    const animation2 = props.shuffle ? "fold" : "unfold";
+    const animation1 = props.shuffle ? "fold" : "unfold";
+    const animation2 = !props.shuffle ? "fold" : "unfold";
   
     return (
         <>
           <div className={"flipUnitContainer"}>
-            <StaticCard position={"upperCard"} digit={previousDigit} />
-            <StaticCard position={"lowerCard"} digit={currentDigit} />
+            <StaticCard position={"upperCard"} digit={currentDigit} />
+            <StaticCard position={"lowerCard"} digit={previousDigit} />
             <AnimatedCard digit={digit1} animation={animation1} />
             <AnimatedCard digit={digit2} animation={animation2} />
           </div>
