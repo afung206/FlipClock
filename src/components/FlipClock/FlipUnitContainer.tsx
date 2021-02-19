@@ -17,7 +17,7 @@ export const FlipUnitContainer: FunctionComponent<FlipUpContainerProps> = (props
 
     // to prevent a negative value
     if (props.unit !== "hours") {
-      previousDigit = previousDigit === '-1' ? '0' : previousDigit;
+      previousDigit = previousDigit === '-1' ? '59' : previousDigit;
     } else {
       previousDigit = previousDigit === '-1' ? '12' : previousDigit;
     }
