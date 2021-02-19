@@ -51,12 +51,12 @@
     }
 
 	&.fold {
-		@include animate(fold, $easeInOut, 0.6s);
+		@include animate(fold, $easeInOut, $turnDuration);
 		transform-style: preserve-3d;
 	}
 	
 	&.unfold {
-		@include animate(unfold, $easeInOut, 0.6s);
+		@include animate(unfold, $easeInOut, $turnDuration);
 		transform-style: preserve-3d;
 	}
 }

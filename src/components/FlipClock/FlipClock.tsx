@@ -18,13 +18,13 @@ export const FlipClock: FunctionComponent = () => {
 
     useEffect(() => {
         timerID = setInterval(() => {
-          console.log("FlipClock::Updating time...");
           return updateTime();
         }, 50);
+        
         return () => {
             clearInterval(timerID);
         }
-    }, [hours, minutes, seconds]);
+    }, []);
   
     const updateTime = () => {
       const time = new Date();
@@ -39,7 +39,7 @@ export const FlipClock: FunctionComponent = () => {
       }
       if (currentMinutes !== minutes) {
         setMinutes(currentMinutes);
-        setMinutesShuffle(!minutesShuffle)
+        setMinutesShuffle(!minutesShuffle);
       }
 
       if (currentSeconds !== seconds) {
