@@ -40,7 +40,7 @@ export const FlipUnitContainer: FunctionComponent<FlipUpContainerProps> = (props
   
     return (
         <>
-          <div key={`${currentDigit}`} className={"flipUnitContainer"}>
+          <div className={"flipUnitContainer"}>
             <StaticCard position={"upperCard"} digit={currentDigit} />
             <StaticCard position={"lowerCard"} digit={previousDigit} />
             <AnimatedCard digit={digit1} animation={animation1} />
