@@ -39,8 +39,6 @@ export const FlipClock: FunctionComponent = () => {
       }
       if (currentMinutes !== minutes) {
         setMinutes(currentMinutes);
-        setSeconds(0);
-        setMinutesShuffle(!minutesShuffle);
         setSecondsShuffle(!secondsShuffle);
       }
 
