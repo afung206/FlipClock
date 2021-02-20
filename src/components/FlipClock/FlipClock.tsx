@@ -52,16 +52,19 @@ export const FlipClock: FunctionComponent = () => {
         <>
             <div className={"flipClock"}>
                 <FlipUnitContainer
+                    key={hours}
                     unit={"hours"}
                     digit={hours}
                     shuffle={hoursShuffle}
                 />
                 <FlipUnitContainer
+                    key={minutes}
                     unit={"minutes"}
                     digit={minutes}
                     shuffle={minutesShuffle}
                 />
                 <FlipUnitContainer
+                    key={seconds}
                     unit={"seconds"}
                     digit={seconds}
                     shuffle={secondsShuffle}
