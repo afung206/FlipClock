@@ -39,13 +39,11 @@ export const FlipUnitContainer: FunctionComponent<FlipUpContainerProps> = (props
     const animation2 = !props.shuffle ? "fold" : "unfold";
   
     return (
-        <>
-          <div className={"flipUnitContainer"}>
-            <StaticCard position={"upperCard"} digit={currentDigit} />
-            <StaticCard position={"lowerCard"} digit={previousDigit} />
-            <AnimatedCard digit={digit1} animation={animation1} />
-            <AnimatedCard digit={digit2} animation={animation2} />
-          </div>
-        </>
+        <div className={"flipUnitContainer"}>
+          <StaticCard position={"upperCard"} digit={currentDigit} />
+          <StaticCard position={"lowerCard"} digit={previousDigit} />
+          <AnimatedCard digit={digit1} animation={animation1} />
+          <AnimatedCard digit={digit2} animation={animation2} />
+        </div>
       );
   };

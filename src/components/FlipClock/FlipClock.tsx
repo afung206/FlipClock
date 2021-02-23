@@ -49,24 +49,27 @@ export const FlipClock: FunctionComponent = () => {
     };
 
     return (
-        <>
-            <div className={"flipClock"}>
-                <FlipUnitContainer
-                    unit={"hours"}
-                    digit={hours}
-                    shuffle={hoursShuffle}
-                />
-                <FlipUnitContainer
-                    unit={"minutes"}
-                    digit={minutes}
-                    shuffle={minutesShuffle}
-                />
-                <FlipUnitContainer
-                    unit={"seconds"}
-                    digit={seconds}
-                    shuffle={secondsShuffle}
-                />
-            </div>
-        </>
+      <>
+          <div className={"flipClock"}>
+              <FlipUnitContainer
+                  key={`${hours}hr`}
+                  unit={"hours"}
+                  digit={hours}
+                  shuffle={hoursShuffle}
+              />
+              <FlipUnitContainer
+                  key={`${minutes}min`}
+                  unit={"minutes"}
+                  digit={minutes}
+                  shuffle={minutesShuffle}
+              />
+              <FlipUnitContainer
+                  key={`${seconds}sec`}
+                  unit={"seconds"}
+                  digit={seconds}
+                  shuffle={secondsShuffle}
+              />
+          </div>
+      </>
     );
 }
