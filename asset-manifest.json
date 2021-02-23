@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/flipclock/static/css/main.15d3ccaf.chunk.css",
-    "main.js": "/flipclock/static/js/main.27d93300.chunk.js",
-    "main.js.map": "/flipclock/static/js/main.27d93300.chunk.js.map",
+    "main.css": "/flipclock/static/css/main.1fffe89c.chunk.css",
+    "main.js": "/flipclock/static/js/main.8799881b.chunk.js",
+    "main.js.map": "/flipclock/static/js/main.8799881b.chunk.js.map",
     "runtime-main.js": "/flipclock/static/js/runtime-main.a33fcb3c.js",
     "runtime-main.js.map": "/flipclock/static/js/runtime-main.a33fcb3c.js.map",
     "static/js/2.abc1a85d.chunk.js": "/flipclock/static/js/2.abc1a85d.chunk.js",
     "static/js/2.abc1a85d.chunk.js.map": "/flipclock/static/js/2.abc1a85d.chunk.js.map",
     "index.html": "/flipclock/index.html",
-    "static/css/main.15d3ccaf.chunk.css.map": "/flipclock/static/css/main.15d3ccaf.chunk.css.map",
+    "static/css/main.1fffe89c.chunk.css.map": "/flipclock/static/css/main.1fffe89c.chunk.css.map",
     "static/js/2.abc1a85d.chunk.js.LICENSE.txt": "/flipclock/static/js/2.abc1a85d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a33fcb3c.js",
     "static/js/2.abc1a85d.chunk.js",
-    "static/css/main.15d3ccaf.chunk.css",
-    "static/js/main.27d93300.chunk.js"
+    "static/css/main.1fffe89c.chunk.css",
+    "static/js/main.8799881b.chunk.js"
   ]
 }
